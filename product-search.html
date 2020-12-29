@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="./public/css/product-search-style.css" />
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   
+    <!-- awesomefont CDN -->
+    <script src="https://kit.fontawesome.com/69fd600045.js" crossorigin="anonymous"></script>
+
+        <title>商品專區</title>
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <!-- <div id="header-outer-box">
+        <header>
+            <div class="container">
+                <a href="./index.html" class="header-box" id="logo"><img src="./public/img/logo.png" alt=""></a>
+                <nav class="header-box">
+                    <ul class="drop-down-menu">
+                        <li class="main-menu">
+                            <a href="#" class="main-title">訊息公告</a>
+                            <ul>
+                                <li class="second-menu">
+                                    <a href="#">優惠資訊</a>
+                                </li>
+                                <li class="second-menu">
+                                    <a href="#">產品資訊</a>
+                                </li>
+                                <li class="second-menu">
+                                    <a href="#">徵才資訊</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-menu">
+                            <a href="#" class="main-title">商品專區</a>
+                            <ul>
+                                <li class="second-menu">
+                                    <a href="#">家具</a>
+                                </li>
+                                <li class="second-menu">
+                                    <a href="#">衣服</a>
+                                </li>
+                                <li class="second-menu">
+                                    <a href="#">玩具</a>
+                                </li>
+                                <li class="second-menu">
+                                    <a href="#">文具</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-menu">
+                            <a href="#" class="main-title">主題精選</a>
+                            <ul>
+                                <li class="second-menu">
+                                    <a href="#">母親節優惠</a>
+                                </li>
+                                <li class="second-menu">
+                                    <a href="#">清明節</a>
+                                </li>
+                                <li class="second-menu">
+                                    <a href="#">端午節</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-menu">
+                            <a href="#" class="main-title">文章專區</a>
+                            <ul>
+                                <li class="second-menu">
+                                    <a href="#">生活類</a>
+                                </li>
+                                <li class="second-menu">
+                                    <a href="#">休閒類</a>
+                                </li>
+                                <li class="second-menu">
+                                    <a href="#">嬰兒類</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="header-box header-icon" id="header-pic">
+                    <img src="./public/img/search.png" alt="" id="search">
+                    <a href="#"><img src="./public/img/login.png" alt="" id="login"></a>
+                    <img src="./public/img/cart.png" alt="" id="cart">
+                    <img src="./public/img/menu.png" alt="" id="menu">
+                </div>
+            </div>
+        </header>
+        <div id="line"></div>
+        <form action="/search">
+            <input type="text" placeholder="請輸入關鍵字" id="search-form">
+        </form>
+    </div> -->
+
+    <header>
+        <div class="container">
+            <a href="./index.html" class="header-box" id="logo"><img src="./public/img/logo.png" alt=""></a>
+            <nav class="header-box">
+                <ul class="drop-down-menu">
+                    <li class="main-menu">
+                        <a href="#" class="main-title">訊息公告</a>
+                        <ul class="second-ddm">
+                            <li class="second-menu">
+                                <a href="#">優惠資訊</a>
+                            </li>
+                            <li class="second-menu">
+                                <a href="#">產品資訊</a>
+                            </li>
+                            <li class="second-menu">
+                                <a href="#">徵才資訊</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu">
+                        <a href="./product-search.html" class="main-title">商品專區</a>
+                        <ul class="second-ddm">
+                            <li class="second-menu">
+                                <a href="#">家具</a>
+                            </li>
+                            <li class="second-menu">
+                                <a href="#">衣服</a>
+                            </li>
+                            <li class="second-menu">
+                                <a href="#">玩具</a>
+                            </li>
+                            <li class="second-menu">
+                                <a href="#">文具</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu">
+                        <a href="#" class="main-title">主題精選</a>
+                        <ul class="second-ddm">
+                            <li class="second-menu">
+                                <a href="#">母親節優惠</a>
+                            </li>
+                            <li class="second-menu">
+                                <a href="#">清明節</a>
+                            </li>
+                            <li class="second-menu">
+                                <a href="#">端午節</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu">
+                        <a href="#" class="main-title">文章專區</a>
+                        <ul class="second-ddm">
+                            <li class="second-menu">
+                                <a href="#">生活類</a>
+                            </li>
+                            <li class="second-menu">
+                                <a href="#">休閒類</a>
+                            </li>
+                            <li class="second-menu">
+                                <a href="#">嬰兒類</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-box header-icon">
+                <div class="hi-box" id="search"><img src="./public/img/search.png" alt="搜尋"></div>
+                <a href="#" class="hi-box"><img src="./public/img/login.png" alt="會員"></a>
+               <a href="#" class="hi-box"><img src="./public/img/cart.png" alt="購物車"></a>
+                <div class="hi-box" id="menu">
+                    <div class="menu-line" id="top-line"></div>
+                    <div class="menu-line" id="middle-line"></div>
+                    <div class="menu-line" id="bottom-line"></div>
+                </div>
+            </div>
+        </div>
+        <form action="/search">
+            <input type="text" placeholder="請輸入關鍵字" class="search-form">
+        </form>
+    </header>
+
+
+    <div id="rwd-nav-title">
+        <div id="rwd-nav-cross"><img src="./img/cross.png" alt=""></div>
+        <div id="rwd-title-box">
+            <div class="rwd-title" id="home"><a href="#">首頁</a></div>
+            <div class="rwd-title"><a href="#">訊息公告</a></div>
+            <div class="rwd-title"><a href="#">商品專區</a></div>
+            <div class="rwd-title"><a href="#">主題精選</a></div>
+            <div class="rwd-title"><a href="#">文章專區</a></div>
+            <div class="rwd-title"><a href="#">登入/註冊</a></div>
+        </div>
+    </div>
+
+    <!-- 購物車 -->
+    <div id="check-list">
+        <div id="leave">
+            <img src="./public/img/cross.png" alt="">
+        </div>
+        <div id="check-product-box">
+            <div class="check-product">
+                <img src="./public/img/product1.jpg" alt="" class="check-pic">
+                <h5 class="product-name">究好 JUS PARFAIT｜瑪鐵(Mocktail) 系列－ 究是剛...</h5>
+                <input type="number" class="product-num" name="budget1" value="1" min="1">
+                <h5 class="check-price">NT$1060</h5>
+            </div>
+            <div class="check-product">
+                <img src="./public/img/product1.jpg" alt="" class="check-pic">
+                <h5 class="product-name">究好 JUS PARFAIT｜瑪鐵(Mocktail) 系列－ 究是剛...</h5>
+                <input type="number" class="product-num" name="budget2" value="1" min="1">
+                <h5 class="check-price">NT$1060</h5>
+            </div>
+            <div id="total">
+                <div id="total-text">
+                    <h5 id="total-title">總金額</h5>
+                    <h5 id="total-price">NT$1060</h5>
+                </div>
+                <button id="RightNow">立即結帳</button>
+                <button id="check-btn">前往結帳</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 確認加入購物車 -->
+    <div id="buy-alert">
+        <img src="./img/check.png" alt="">
+        <p>商品已放入購物車</p>
+    </div>
+
+    <!-- 連結 -->
+    <div class="container">
+        <div id="link">
+            <a href="./index.html">Home</a>
+            <span><img src="./public/img/next.png" alt=""></span>
+            <a href="">文具</a>
+            <span><img src="./public/img/next.png" alt=""></span>
+            <a href="" id="highlight">鋼筆</a>
+        </div>
+    </div>
+
+    <!-- 商品列 -->
+    <div class="container" id="product-box">
+        <div class="row">
+            <div class="col-lg-3" id="classify">
+                <div class="classify-box">
+                    <h2><a href="#">熱門商品</a></h2>
+                </div>
+                <div class="classify-box">
+                    <h2><a href="#">最新商品</a></h2>
+                </div>
+                <div class="classify-box" id="prod-classify">
+                    <div id="prod-classify-title">
+                        <h2>商品分類</h2>
+                    </div>
+                    <ul>
+                        <li class="main-title">
+                            <a>文具</a>
+                            <ul class="second-title">
+                                <li><a>鋼筆</a></li>
+                                <li><a>原子筆</a></li>
+                                <li><a>工具筆</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-title">
+                            <a>服飾</a>
+                            <ul class="second-title">
+                                <li><a>女裝</a></li>
+                                <li><a>男裝</a></li>
+                                <li><a>童裝</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-title">
+                            <a>戶外運動</a>
+                            <ul class="second-title">
+                                <li><a>自行車</a></li>
+                                <li><a>露營用品</a></li>
+                                <li><a>雨具</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-title">
+                            <a>配件飾品</a>
+                            <ul class="second-title">
+                                <li><a>項鍊</a></li>
+                                <li><a>耳環</a></li>
+                                <li><a>戒指</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-title">
+                            <a>居家生活</a>
+                            <ul class="second-title">
+                                <li><a>燈具</a></li>
+                                <li><a>時鐘</a></li>
+                                <li><a>寢具</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="classify-box" id="tag">
+                    <h2>熱門標籤</h2>
+                    <ul>
+                        <li>上班</li>
+                        <li>禮物</li>
+                        <li>端午節</li>
+                        <li>極簡</li>
+                        <li>置物</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9" id="product-row">
+                <div id="title">
+                    <h3>鋼筆</h3>
+                    <form action="">
+                        <label for="">排序</label>
+                        <select name="order" id="order">
+                            <option value="new">最新上架</option>
+                            <option value="hot">熱門程度</option>
+                            <option value="high-price">價格由高至低</option>
+                            <option value="low-price">價格由低至高</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="card-group product-group1 ">
+                    <div class="row">
+                        <div class="card border-0 px-3 col-lg-4 col-md-6 col-sm-6 col-6">
+                            <div class="pic" id="product-pic1-1">
+                                <div class="hover-color">
+                                    <a href="./product.html">
+                                        <div id="link-box"></div>
+                                    </a>
+                                    <div class="save-btn" id="index-save">
+                                        <!-- 挖空 -->
+                                        <i class="far fa-heart"></i>
+                                        <!-- 填滿 -->
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="buy-btn">加入購物車</div>
+                            </div>
+                            <div class="card-body px-0 py-3 product-text">
+                                <h5 class="card-title">究好 JUS PARFAIT｜瑪鐵(Mocktail) 系列－ 究是剛...</h5>
+                                <div class="price">
+                                    <h5 class="card-price">NT$1060</h5>
+                                    <h5 class="card-oprice">1500</h5>
+                                </div>
+                                <div class="rwd-icon">
+                                    <img src="./public/img/cart.png" alt="" class="rwd-cart">
+                                    <div class="rwd-save-btn">
+                                        <!-- 挖空 -->
+                                        <i class="far fa-heart"></i>
+                                        <!-- 填滿 -->
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 px-3 col-lg-4 col-md-6 col-sm-6 col-6">
+                            <div class="pic" id="product-pic1-2">
+                                <div class="hover-color">
+                                    <a href="./product.html">
+                                        <div id="link-box"></div>
+                                    </a>
+                                    <div class="save-btn" id="index-save">
+                                        <!-- 挖空 -->
+                                        <i class="far fa-heart"></i>
+                                        <!-- 填滿 -->
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="buy-btn">加入購物車</div>
+                            </div>
+                            <div class="card-body px-0 py-3 product-text">
+                                <h5 class="card-title">米樂爆米花 | 幾米系列六入組合(焦糖+巧克力+原味甜+墨...</h5>
+                                <div class="price">
+                                    <h5 class="card-price">NT$680</h5>
+                                    <h5 class="card-oprice">1000</h5>
+                                </div>
+                                <div class="rwd-icon">
+                                    <img src="./public/img/cart.png" alt="" class="rwd-cart">
+                                    <div class="rwd-save-btn">
+                                        <!-- 挖空 -->
+                                        <i class="far fa-heart"></i>
+                                        <!-- 填滿 -->
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 px-3 col-lg-4 col-md-6 col-sm-6 col-6">
+                            <div class="pic" id="product-pic1-3">
+                                <div class="hover-color">
+                                    <a href="./product.html">
+                                        <div id="link-box"></div>
+                                    </a>
+                                    <div class="save-btn" id="index-save">
+                                        <!-- 挖空 -->
+                                        <i class="far fa-heart"></i>
+                                        <!-- 填滿 -->
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="buy-btn">加入購物車</div>
+                            </div>
+                            <div class="card-body px-0 py-3 product-text">
+                                <h5 class="card-title">Tea Forté｜雙人茶品禮盒</h5>
+                                <div class="price">
+                                    <h5 class="card-price">NT$1400</h5>
+                                    <h5 class="card-oprice">2000</h5>
+                                </div>
+                                <div class="rwd-icon">
+                                    <img src="./public/img/cart.png" alt="" class="rwd-cart">
+                                    <div class="rwd-save-btn">
+                                        <!-- 挖空 -->
+                                        <i class="far fa-heart"></i>
+                                        <!-- 填滿 -->
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 px-3 col-lg-4 col-md-6 col-sm-6 col-6">
+                            <div class="pic" id="product-pic1-4">
+                                <div class="hover-color">
+                                    <a href="./product.html">
+                                        <div id="link-box"></div>
+                                    </a>
+                                    <div class="save-btn" id="index-save">
+                                        <!-- 挖空 -->
+                                        <i class="far fa-heart"></i>
+                                        <!-- 填滿 -->
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="buy-btn">加入購物車</div>
+                            </div>
+                            <div class="card-body px-0 py-3 product-text">
+                                <h5 class="card-title">Tea Forté｜手沖冰釀茶禮盒組</h5>
+                                <div class="price">
+                                    <h5 class="card-price">NT$6980</h5>
+                                    <h5 class="card-oprice">9999</h5>
+                                </div>
+                                <div class="rwd-icon">
+                                    <img src="./public/img/cart.png" alt="" class="rwd-cart">
+                                    <div class="rwd-save-btn">
+                                        <!-- 挖空 -->
+                                        <i class="far fa-heart"></i>
+                                        <!-- 填滿 -->
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 px-3 col-lg-4 col-md-6 col-sm-6 col-6">
+                            <div class="pic" id="product-pic1-4">
+                                <div class="hover-color">
+                                    <a href="./product.html">
+                                        <div id="link-box"></div>
+                                    </a>
+                                    <div class="save-btn" id="index-save">
+                                        <!-- 挖空 -->
+                                        <i class="far fa-heart"></i>
+                                        <!-- 填滿 -->
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="buy-btn">加入購物車</div>
+                            </div>
+                            <div class="card-body px-0 py-3 product-text">
+                                <h5 class="card-title">Tea Forté｜手沖冰釀茶禮盒組</h5>
+                                <div class="price">
+                                    <h5 class="card-price">NT$6980</h5>
+                                    <h5 class="card-oprice">9999</h5>
+                                </div>
+                                <div class="rwd-icon">
+                                    <img src="./public/img/cart.png" alt="" class="rwd-cart">
+                                    <div class="rwd-save-btn">
+                                        <!-- 挖空 -->
+                                        <i class="far fa-heart"></i>
+                                        <!-- 填滿 -->
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 px-3 col-lg-4 col-md-6 col-sm-6 col-6">
+                            <div class="pic" id="product-pic1-4">
+                                <div class="hover-color">
+                                    <a href="./product.html">
+                                        <div id="link-box"></div>
+                                    </a>
+                                    <div class="save-btn" id="index-save">
+                                        <!-- 挖空 -->
+                                        <i class="far fa-heart"></i>
+                                        <!-- 填滿 -->
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="buy-btn">加入購物車</div>
+                            </div>
+                            <div class="card-body px-0 py-3 product-text">
+                                <h5 class="card-title">Tea Forté｜手沖冰釀茶禮盒組</h5>
+                                <div class="price">
+                                    <h5 class="card-price">NT$6980</h5>
+                                    <h5 class="card-oprice">9999</h5>
+                                </div>
+                                <div class="rwd-icon">
+                                    <img src="./public/img/cart.png" alt="" class="rwd-cart">
+                                    <div class="rwd-save-btn">
+                                        <!-- 挖空 -->
+                                        <i class="far fa-heart"></i>
+                                        <!-- 填滿 -->
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 px-3 col-lg-4 col-md-6 col-sm-6 col-6">
+                            <div class="pic" id="product-pic1-4">
+                                <div class="hover-color">
+                                    <a href="./product.html">
+                                        <div id="link-box"></div>
+                                    </a>
+                                    <div class="save-btn" id="index-save">
+                                        <!-- 挖空 -->
+                                        <i class="far fa-heart"></i>
+                                        <!-- 填滿 -->
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="buy-btn">加入購物車</div>
+                            </div>
+                            <div class="card-body px-0 py-3 product-text">
+                                <h5 class="card-title">Tea Forté｜手沖冰釀茶禮盒組</h5>
+                                <div class="price">
+                                    <h5 class="card-price">NT$6980</h5>
+                                    <h5 class="card-oprice">9999</h5>
+                                </div>
+                                <div class="rwd-icon">
+                                    <img src="./public/img/cart.png" alt="" class="rwd-cart">
+                                    <div class="rwd-save-btn">
+                                        <!-- 挖空 -->
+                                        <i class="far fa-heart"></i>
+                                        <!-- 填滿 -->
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 px-3 col-lg-4 col-md-6 col-sm-6 col-6">
+                            <div class="pic" id="product-pic1-4">
+                                <div class="hover-color">
+                                    <a href="./product.html">
+                                        <div id="link-box"></div>
+                                    </a>
+                                    <div class="save-btn" id="index-save">
+                                        <!-- 挖空 -->
+                                        <i class="far fa-heart"></i>
+                                        <!-- 填滿 -->
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="buy-btn">加入購物車</div>
+                            </div>
+                            <div class="card-body px-0 py-3 product-text">
+                                <h5 class="card-title">Tea Forté｜手沖冰釀茶禮盒組</h5>
+                                <div class="price">
+                                    <h5 class="card-price">NT$6980</h5>
+                                    <h5 class="card-oprice">9999</h5>
+                                </div>
+                                <div class="rwd-icon">
+                                    <img src="./public/img/cart.png" alt="" class="rwd-cart">
+                                    <div class="rwd-save-btn">
+                                        <!-- 挖空 -->
+                                        <i class="far fa-heart"></i>
+                                        <!-- 填滿 -->
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 px-3 col-lg-4 col-md-6 col-sm-6 col-6">
+                            <div class="pic" id="product-pic1-4">
+                                <div class="hover-color">
+                                    <a href="./product.html">
+                                        <div id="link-box"></div>
+                                    </a>
+                                    <div class="save-btn" id="index-save">
+                                        <!-- 挖空 -->
+                                        <i class="far fa-heart"></i>
+                                        <!-- 填滿 -->
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="buy-btn">加入購物車</div>
+                            </div>
+                            <div class="card-body px-0 py-3 product-text">
+                                <h5 class="card-title">Tea Forté｜手沖冰釀茶禮盒組</h5>
+                                <div class="price">
+                                    <h5 class="card-price">NT$6980</h5>
+                                    <h5 class="card-oprice">9999</h5>
+                                </div>
+                                <div class="rwd-icon">
+                                    <img src="./public/img/cart.png" alt="" class="rwd-cart">
+                                    <div class="rwd-save-btn">
+                                        <!-- 挖空 -->
+                                        <i class="far fa-heart"></i>
+                                        <!-- 填滿 -->
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="page-box">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-9">
+                <div class="page" id="page1">1</div>
+                <div class="page">2</div>
+                <div class="page">3</div>
+                <div class="page">4</div>
+                <div class="page">5</div>
+                <div class="page">></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer-box">
+        <footer class="container">
+            <div class="row ">
+                <div id="footer-menu" class="col-lg-8 col-md-12 col-sm-12 col-12">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 footer-title py-3">
+                            <h5 class="footer-main-title">訊息公告</h5>
+                            <div class="footer-second-title pt-1">
+                                <div><a href="#">優惠資訊</a></div>
+                                <div><a href="#">產品資訊</a></div>
+                                <div><a href="#">徵才資訊</a></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 footer-title py-3">
+                            <h5 class="footer-main-title">商品專區</h5>
+                            <div class="footer-second-title pt-1">
+                                <div><a href="#">家具</a></div>
+                                <div><a href="#">衣服</a></div>
+                                <div><a href="#">文具</a></div>
+                                <div><a href="#">玩具</a></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 footer-title py-3">
+                            <h5 class="footer-main-title">主題精選</h5>
+                            <div class="footer-second-title pt-1">
+                                <div><a href="#">母親節優惠</a></div>
+                                <div><a href="#">清明節</a></div>
+                                <div><a href="#">端午節</a></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 footer-title py-3">
+                            <h5 class="footer-main-title">文章專區</h5>
+                            <div class="footer-second-title pt-1">
+                                <div><a href="#">生活類</a></div>
+                                <div><a href="#">休閒類</a></div>
+                                <div><a href="#">嬰兒類</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-4 col-md-12 col-sm-12 col-12 py-3" id="contact">
+                    <h5 class="footer-main-title">聯絡我們</h5>
+                    <div class="pt-1">
+                        <p>客服時間：週一至週五10:00-18:00</p>
+                        <p>客服專線：(02)2368-3682</p>
+                        <p>客服信箱：service@cubico-inc.com</p>
+                    </div>
+                </div>
+            </div>
+            <p id="CopyRight">Copyright &copy;AJIICMIYA All Rights Reserved.</p>
+
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./public/js/index.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Noto Sans", "Apple Casual", "Corbel", "Microsoft JhengHei",
+		"sans-serif";
+	box-sizing: border-box;
+	color: #333;
+}
+
+:root {
+	--main-color: #778bbf;
+	--price-color: #366b8c;
+	--price-color2:#89f5ff;
+	--hover-color: #89aaff;
+	--second-color: #dce6ff;
+}
+
+a{
+	text-decoration: none !important;
+}
+
+
+
+/* 連結 */
+#link{
+    margin: 80px 0 30px;
+	font-size: 15px; 
+	vertical-align: middle;
+}
+
+#link img{
+	height: 10px;
+	margin: 0 5px;
+}
+
+#link a{
+	color: #333;
+}
+
+#highlight{
+	color: var(--main-color) !important;
+	font-weight: 900;
+}
+
+
+
+
+/* 商品列 */
+
+
+/* 目錄欄 */
+.classify-box{
+	margin: 20px 0;
+}
+
+#product-box h2{
+	font-size: 18px;
+	color: var(--main-color);
+	font-weight: 500;
+}
+
+#product-box a{
+	color: var(--main-color);
+}
+
+#prod-classify a{
+	color: #333;
+}
+
+#prod-classify h2{
+	display: inline-block;
+}
+
+#prod-classify img{
+	height: 13px;
+	margin-bottom: 5.5px;
+	margin-left: 70px;
+}
+
+.main-title{
+	padding: 10px 0;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.main-title a:hover{
+	color: var(--main-color) !important;
+}
+
+.second-title{
+	display: none;
+}
+
+#tag ul{
+	margin: 20px 0;
+}
+
+#tag li{
+	display: inline-block;
+	font-size: 13px;
+	padding: 2px 10px;
+	background-color: var(--main-color);
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+/* 商品欄 */
+#title{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	vertical-align: middle;
+}
+
+#product-row h3{
+	font-size: 24px;
+	display: inline-block;
+}
+
+#product-row form{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#product-row label{
+	font-size: 15px;
+	padding: 0 10px;
+}
+
+#product-row select{
+	border: 0;
+	background-color: #f4f4f4;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+#product-row option{
+	font-size: 14px;
+}
+
+/* 頁數 */
+
+#page-box{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.page{
+	width: 40px;
+	height: 40px;
+	background-color: #f4f4f4;
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 15px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.page:hover{
+	background-color: var(--main-color);
+	color: #fff;
+}
+
+#page1{
+	background-color: var(--main-color);
+	color: #fff;
+}
+
+/* 手機版 */
+@media screen and (max-width: 768px){
+	#classify{
+		display: none;
+	}
+}
+
+/* 平板版 */
+@media screen and (min-width: 769px){
+	#classify{
+		display: none;
+	}
+}
+
+/* 電腦版 */
+@media screen and (min-width: 1024px){
+	#classify{
+		display: block;
+	}
+}
